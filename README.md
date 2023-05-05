@@ -1,18 +1,37 @@
 # A SIMPLE WEBGIS GEOSERVER CLIENT
 
-This application connect to a geoserver especified on . ENV file and list all workspaces and layers from geoserver.
+This application connect to a geoserver especified on .env file and list all workspaces and layers from geoserver.
+
+## CONFIG '.env' FILE
+
+* **REACT_APP_GEOSERVER_WMS**=https://geoserver.yourdomain/wms
+* **REACT_APP_GEOSERVER_GETCAPABILITIES_WMS**=https://geoserver.yourdomain/ows?service=wms&version=1.3.0&request=GetCapabilities
+* **REACT_APP_GEOSERVER_GETLEGENDGRAPHIC**=https://geoserver.yourdomain/wms? REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=
+* **REACT_APP_MAP_INITIALPOSITION_LATITUDE**=-3.7903
+* **REACT_APP_MAP_INITIALPOSITION_LONGITUDE**=-38.5579
+*  **REACT_APP_DOCUMENTS_GOOGLEDRIVE_SHAREDID**=1OBbaDK8otGUbNCGJcdZutporEY17fwhl
+* **REACT_APP_GEOSERVER_DOWNLOAD_SHAPE**=https://geoserver.yourdomain/{workspace}/ows?service=WFS&version=1.0.0&request=GetFeature&typeName={layerName}&outputFormat=SHAPE-ZIP
+* **REACT_APP_GEOSERVER_DOWNLOAD_KML**=https://geoserver.yourdomain/{workspace}/wms/kml?layers={layerName}
+
+Change `https://geoserver.yourdomain` to your geoserver url address as REACT_APP_MAP_INITIALPOSITION_LATITUDE and REACT_APP_MAP_INITIALPOSITION_LONGITUDE to your coodenates.
 
 Demo [https://webgis.executar.net](https://webgis.executar.net)
 
-# Getting Started with Create React App
+## SETUP
+
+### Starting the React App
+
+#### `npm install`
+
+Install all node dependencies  to the project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+##### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -20,12 +39,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
+##### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -34,43 +48,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject` , you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject` . The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -12,7 +12,7 @@ export default function Home() {
         <div className='block-header'>
           <div className='row'>
             <div className='col-lg-7 col-md-6 col-sm-12'>
-              <h2>WELLCOME</h2><small className='text-muted'> HELP US TO IMPROVE  THIS APP SOLUTION  </small>
+              <h2>WELLCOME</h2><small className='text-muted'> HELP US TO IMPROVE  THIS APP  </small>
             </div>
           </div>
         </div>
