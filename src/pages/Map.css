@@ -1,0 +1,13 @@
+.leaflet-control-scale {
+    /* right: 5px; */
+    /* bottom: 80px; */
+    left: 255px;
+}
+
+.leaflet-container {
+    background-color: white;
+}
+
+.leaflet-right {
+    z-index: 401;
+}

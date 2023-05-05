@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="A simple WEBGIS Geoserver Client" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    
+    -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+
+  <title>WEBGIS - Geoserver Client</title>
+  <!-- Favicon-->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/bootstrap/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/morrisjs/morris.css" />
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/main.css" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/color_skins.css" />
+</head>
+
+
+<body class="theme-green" id="toggle-menu">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- Page Loader -->
+  <div class="page-loader-wrapper">
+    <div class="loader">
+      <div class="m-t-30"><img src="%PUBLIC_URL%/assets/images/loading.svg" width="120" height="129" alt="executar.net">
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <!-- Overlay For Sidebars -->
+  <div class="overlay"></div><!-- Search  -->
+  <div class="search-bar">
+    <div class="search-icon"> <i class="material-icons">search</i> </div>
+    <input type="text" placeholder="Explore...">
+    <div class="close-search"> <i class="material-icons">close</i> </div>
+  </div>
+
+  <div id="root"> </div>
+
+
+
+
+
+
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+  <!-- Jquery Core Js -->
+  <script src="%PUBLIC_URL%/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+  <script src="%PUBLIC_URL%/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+  <script src="%PUBLIC_URL%/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+  <script src="%PUBLIC_URL%/assets/bundles/jvectormap.bundle.js"></script> <!-- JVectorMap Plugin Js -->
+  <script src="%PUBLIC_URL%/assets/js/pages/maps/jvectormap.js"></script>
+
+</body>
+
+</html>
