@@ -1,6 +1,6 @@
 # A SIMPLE WEBGIS GEOSERVER CLIENT
 
-This application connect to a geoserver especified on .env file and list all workspaces and layers from geoserver.
+This application connect to a geoserver especified on .env file and list all workspaces and layers from your server.
 
 ## CONFIG '.env' FILE
 
@@ -9,7 +9,7 @@ This application connect to a geoserver especified on .env file and list all wor
 * **REACT_APP_GEOSERVER_GETLEGENDGRAPHIC**=https://geoserver.yourdomain/wms? REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=
 * **REACT_APP_MAP_INITIALPOSITION_LATITUDE**=-3.7903
 * **REACT_APP_MAP_INITIALPOSITION_LONGITUDE**=-38.5579
-*  **REACT_APP_DOCUMENTS_GOOGLEDRIVE_SHAREDID**=1OBbaDK8otGUbNCGJcdZutporEY17fwhl
+* **REACT_APP_DOCUMENTS_GOOGLEDRIVE_SHAREDID**=1OBbaDK8otGUbNCGJcdZutporEY17fwhl
 * **REACT_APP_GEOSERVER_DOWNLOAD_SHAPE**=https://geoserver.yourdomain/{workspace}/ows?service=WFS&version=1.0.0&request=GetFeature&typeName={layerName}&outputFormat=SHAPE-ZIP
 * **REACT_APP_GEOSERVER_DOWNLOAD_KML**=https://geoserver.yourdomain/{workspace}/wms/kml?layers={layerName}
 

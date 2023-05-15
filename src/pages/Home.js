@@ -25,7 +25,7 @@ export default function Home() {
       <ContentBox>
         <div className="row">
           <div className="col-md-6">
-            <h5> <i className="zmdi zmdi-globe"> </i> Executar.net </h5>
+            <h5> <i className="zmdi zmdi-globe"> </i> WebGIS Geoserver Client </h5>
             <p className="text-justify">
               Specialized in Web Application Development, we seek to use the most current development standards, providing better agility in the analysis, creation and coding processes of your project.
 
@@ -39,7 +39,7 @@ export default function Home() {
             <h5> <i className="zmdi zmdi-pin"></i> Contact</h5>
             <p className="text-justify">
               <br />anibalgv@gmail.com
-              <br />contato@executar.net
+              <br />https://github.com/anibalgv/webgis
 
             </p>
           </div>

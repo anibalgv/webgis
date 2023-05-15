@@ -20,6 +20,7 @@ export default function MapComponent() {
   const location = useLocation();
   const { currentLayer } = location.state;
   const [legend, setLegend] = useState('');
+  const [legendExpanded, setLegendExpanded] = useState(true);
   const geoserverWmsUrl = process.env.REACT_APP_GEOSERVER_WMS;
   const { BaseLayer } = LayersControl;
 
@@ -40,9 +41,16 @@ export default function MapComponent() {
     setLayers(_layers);
   }
 
+  const handleLegendExpand = () => {
+    // let legendExpanded = !legendExpanded;
+    setLegendExpanded(false);
+    // console.log('legendExpanded', legendExpanded)
+    // return legendExpanded;
+  }
+
   return (
     <>
-      {legend ? <LayerLegend url={legend} /> : null}
+      {legend ? <LayerLegend url={legend} layer={currentLayer} /> : null}
       <MapContainer
         center={initialPostion}
         zoom={11}

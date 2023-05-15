@@ -29,7 +29,7 @@ export default function Downloads() {
   const DownloadList = () => {
 
     const component = [];
-    const linkSource = 'https://www.executar.net'
+    const linkSource = process.env.REACT_APP_GEOSERVER_WMS;
 
     for (const workspace in groups) {
       if (Object.hasOwnProperty.call(groups, workspace)) {
