@@ -11,14 +11,14 @@ export default function BaseLayersComponent() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
       </BaseLayer>
-      <BaseLayer name='Google Maps'>
+      {/* <BaseLayer name='Google Maps'>
         <TileLayer
           url='https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'
           attribution='&copy;<a href="https://maps.google.com">GoogleMap</a>'
           maxZoom={20}
           subdomains={['mt1', 'mt2', 'mt3']}
         />
-      </BaseLayer>
+      </BaseLayer> */}
       <BaseLayer name='Opentop'>
         <TileLayer
           attribution='&copy;<a href="https://opentopomap.org/#map=6/-18.969/-45.000">OpenTopoMap</a>'
